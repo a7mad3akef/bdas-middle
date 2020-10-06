@@ -1,0 +1,17 @@
+default_config: null
+mqtt:
+  broker: localhost
+  port: 1883
+homekit:
+  auto_start: false
+  filter:
+    include_domains:
+      - light
+      - binary_sensor
+      - switch
+      - climate
+      - cover
+    exclude_entities:
+      - binary_sensor.remote_ui
+      - binary_sensor.updater
+      - binary_sensor.virtual
